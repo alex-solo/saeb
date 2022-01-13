@@ -9,3 +9,8 @@ variable "terraform_script_version" {
 variable "location" {
   type = string
 }
+
+variable "storage_containers" {
+  description = "Default blob storage containers used by SAEB Platform"
+  type        = list(string)
+}
